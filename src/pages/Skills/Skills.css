@@ -1,0 +1,204 @@
+.skills-page {
+  min-height: 100vh;
+}
+
+/* Skills Banner */
+.skills-banner {
+  padding: 80px 0 20px; /* Further reduced height */
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #030303;
+}
+
+.banner-title .text-gradient {
+  background: none;
+  -webkit-text-fill-color: #030303;
+  color: #030303;
+}
+
+.banner-subtitle {
+  font-size: 1.1rem;
+  color: #52525b;
+  line-height: 1.6;
+}
+
+/* Sections */
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.skill-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skill-card__icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0; /* Changed from 8px because it's now in flex header */
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.skill-card-desc {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+.skill-divider {
+  height: 1px;
+  background: var(--border-color);
+  width: 100%;
+  margin: 4px 0;
+}
+
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-list li {
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-bottom-width: 2px; /* Emphasize the colored border bottom */
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+}
+
+.skill-list li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Workflow Section */
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.workflow-card {
+  padding: 30px 24px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.workflow-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-primary);
+}
+
+.workflow-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--accent-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workflow-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.workflow-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Professional Attributes Section */
+.attributes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.attribute-card {
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.attribute-card:hover {
+  transform: translateX(10px);
+}
+
+.attribute-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.attribute-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.attribute-content p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

@@ -1,0 +1,151 @@
+/* Contact Banner Styles */
+.contact-banner {
+  padding: 80px 0 20px; /* Further reduced height */
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-banner .banner-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 12px;
+  color: #030303;
+}
+
+.contact-banner .banner-title .text-gradient {
+  background: none;
+  -webkit-text-fill-color: #030303;
+  color: #030303;
+}
+
+.contact-banner .banner-subtitle {
+  font-size: 1.1rem;
+  color: #52525b;
+  line-height: 1.6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+}
+
+.contact-card {
+  padding: 40px;
+}
+
+.contact-card h3 {
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.info-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.info-item:hover {
+  transform: translateX(10px);
+}
+
+.info-item:hover .info-icon {
+  color: var(--accent-secondary);
+}
+
+.info-icon {
+  color: var(--accent-primary);
+  width: 24px;
+  height: 24px;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.form-group input, 
+.form-group textarea {
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  color: white;
+  font-family: inherit;
+  transition: var(--transition-smooth);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.w-full {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Map Section Styles */
+.map-section {
+  margin-top: 80px;
+}
+
+.map-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.map-card iframe {
+  display: block;
+  transition: filter 0.5s ease;
+}
